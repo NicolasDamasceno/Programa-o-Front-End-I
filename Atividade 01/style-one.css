@@ -1,0 +1,29 @@
+body{
+    background-color: #A5A692;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    background-color: #011F26;
+    color: white;
+
+}
+
+h2{
+    color: #025E73;
+}
+
+h3{
+    color: #025E73;
+}
+
+.autor{
+    background-color: #BFB78F;
+    text-align: right;
+}
+
+.separador{
+    text-align: center;
+    color: #025E73;
+}
