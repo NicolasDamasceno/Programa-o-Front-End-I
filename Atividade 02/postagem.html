@@ -73,13 +73,41 @@
 
     <h2>Lista de Bebidas Favoritas</h2>
     <ol type="1">
-        <li class="lista-ol">Café expresso intenso</li>
-        <li class="lista-ol">Cappuccino cremoso</li>
-        <li class="lista-ol">Chocolate quente espacial</li>
-        <li class="lista-ol">Chá de hortelã</li>
+        <li>&#127942; Café expresso intenso</li>
+        <li>Cappuccino cremoso</li>
+        <li>Chocolate quente espacial</li>
+        <li>Chá de hortelã</li>
     </ol>
     <p class="autor">Autor: Nicolas Damasceno | Data: 23/03/2026</p>
     <p class="separador">&#9733;&#9733;&#9733;</p>
+
+    <h2>Uma Lista dentro de uma Lista!</h2>
+    <ol class="list-ol">
+        <li class="list-block">
+            Aprender HTML
+            <ul class="ul1">
+                <li class="new-list1">&#127919; Revisar estrutura básica</li>
+                <li class="new-list">&#127919; Criar páginas com títulos</li>
+                <li class="new-list">&#127919; Inserir parágrafos e listas</li>
+            </ul>
+        </li>
+        <li class="list-block">
+            Aprender CSS
+            <ul>
+                <li class="new-list">&#127919; Aplicar cores e fontes</li>
+                <li class="new-list1">&#127919; Centralizar elementos</li>
+                <li class="new-list">&#127919; Ajustar margens e espaçamentos</li>
+            </ul>
+        </li>
+        <li class="list-block">
+            Aprender JavaScript
+            <ul>
+                <li class="new-list">&#127919; Criar botão de teste</li>
+                <li class="new-list">&#127919; Mostrar mensagem com alerta</li>
+                <li class="new-list">&#127919; Alterar conteúdo de um elemento</li>
+            </ul>
+        </li>
+    </ol>
     <h3>Mudar cores da página</h3>
     <input type="color" id="cor-fundo" name="cor-fundo" value="#ffffff"
         onchange="document.body.style.backgroundColor = this.value;">

@@ -117,7 +117,40 @@ Passo 1: li → seleciona todos os itens
 Passo 2: :first-child → pega apenas o primeiro item
 Passo 3: ::before → cria um conteúdo antes do texto
 */
-li:first-child::before {
-    /* Insere o emoji antes do conteúdo do primeiro item */
-    content: "🏆 ";
+
+ul{
+    max-width: 400px;
+}
+
+.list-block{
+    background-color: #8b819b;
+    color: black;
+}
+.list-block:first-child::before {
+    content: none;
+}
+
+.list-block:hover{
+    transform: none;
+    background-color: #8b819b;
+}
+
+.new-list, .new-list1{
+    background-color: #8b819b;
+}
+
+.new-list:hover, .new-list1:hover{
+    transform: translateX(6px);
+    background-color: #a190bb;
+}
+.new-list:first-child::before{
+    content: none;
+}
+
+.new-list1:first-child::before{
+    content: none;
+}
+
+.new-list1{
+    text-decoration: line-through;
 }
