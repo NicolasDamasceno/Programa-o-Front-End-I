@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    background-color: #A5A692;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+h1{
+    text-align: center;
+    background-color: #011F26;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+h2{
+    color: #025E73;
+    font-size: 1.5rem;
+}
+
+h3{
+    color: #025E73;
+}
+
+.autor{
+    background-color: #BFB78F;
+    text-align: right;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.separador{
+    text-align: center;
+    color: #025E73;
+}
+
+.nova-postagem{
+    font-family: "Tilt Neon", sans-serif;
+    text-align: justify;
+    word-spacing: 1.5rem;
+}
+
+.nunito-type1{
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.nunito-type2{
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+}
+
+.ubuntu-type1 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.ubuntu-type2 {
+    font-family: "Ubuntu", sans-serif;
+    font-style: oblique 10deg;
+}
+
+.ubuntu-type3 {
+    font-family: "Ubuntu", sans-serif;
+    font-style: oblique 20deg;
+}
+
+.img-teste {
+    width: 300px;
+}
+
+/* Define a cor do texto da lista */
+ol {
+    color: #e5e7eb;
+    /* Faz o número aparecer dentro do bloco do item */
+    list-style-position: inside;
+    /* Limita a largura da lista */
+    max-width: 400px;
+    /* Centraliza a lista horizontalmente */
+    margin: auto;
+}
+
+/* =========================
+ESTILIZAÇÃO DOS ITENS (li)
+========================= */
+li {
+    /* Cor de fundo dos itens */
+    background: #374151;
+    /* Arredondamento das bordas */
+    border-radius: 12px;
+    /* Espaçamento interno (respiro do conteúdo) */
+    padding: 14px 18px;
+    /* Espaçamento entre os itens */
+    margin: 12px 0;
+    /* Suaviza mudanças visuais (hover, movimento, etc.) */
+    transition: 0.2s;
+}
+
+/* =========================
+EFEITO AO PASSAR O MOUSE
+========================= */
+li:hover {
+    /* Move levemente o item para a direita */
+    transform: translateX(6px);
+    /* Clareia um pouco o fundo */
+    background: #4b5563;
+}
+
+/* =========================
+DESTAQUE DO PRIMEIRO ITEM
+========================= */
+/*
+Passo 1: li → seleciona todos os itens
+Passo 2: :first-child → pega apenas o primeiro item
+Passo 3: ::before → cria um conteúdo antes do texto
+*/
+li:first-child::before {
+    /* Insere o emoji antes do conteúdo do primeiro item */
+    content: "🏆 ";
+}
