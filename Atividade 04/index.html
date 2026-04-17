@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM e JS</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Document com Get</h2>
+    <p id="paragrafo1">Mudar Cor do Texto</p>
+    <button id="btn-cor" onclick="mudarCor()">Azul</button>
+
+    <h2>Lista Modificada com Get</h2>
+    <ol id="lista1">
+        <li>Ely</li>
+        <li>Nicolas</li>
+        <li>Mario</li>
+    </ol>
+    <button id="btn-estilo" onclick="mudarEstilo()">Estilo</button>
+
+    <h2>Contando Parágrafos dentro de uma DIV</h2>
+    <div id="div-cont">
+        <p>Parágafo 1</p>
+        <p>Parágafo 2</p>
+        <p>Parágafo 3</p>
+    </div>
+    <div id="div-resul">
+
+    </div>
+    <button id="btn-cont" onclick="contarPara()">Contar</button>
+
+    <h2>Exemplo do uso do DOM</h2>
+    <p id="paragrafo2"> Clique no botão abaixo para alterar o texto deste parágrafo:</p>
+    <button id="botao">Clique</button>
+    <button id="limpar">Limpar</button>
+
+    <h2>Diferença entre TextContent, InnerText e InnerHTML</h2>
+    <h3>InnerHTML</h3>
+    <p>Retorna ou define todo o conteúdo, incluindo as tags HTML interna</p>
+    <p>Exemplo: "elemento.innerHTML = 'João está &lt;strong&gt;online&lt;/strong&gt;'", online estará em negrito.</p>
+    
+    <h3>InnerText</h3>
+    <p>Retorna apenas o texto visível. Se um elemento estiver escondido com display: none, o innerText n~zo vai pegá-lo.</p>
+    <p>Exemplo: "console.log(elemento.innerText);", caso o parágrafo esteja invisível no CSS, o innerText retornará vazio ("")</p>
+
+    <h3>TextContent</h3>
+    <p>Retorna o texto contido no elemento e em seus filhos, exatamente como está no código, inclusive o que estive escondfido por CS ou espaços em branco extras.</p>
+    <p>Exemplo: "elemento.textContent = 'João está &lt;strong&gt;online&lt;/strong&gt;'", ele mostrará as tags stongs em vez de deixar em negrito.</p>
+
+    <h2>Copiando Texto de uma caixa a outra</h2>
+    <p id="texto-original">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis nihil fugiat tenetur quidem, laborum deserunt iure. Dolorem tenetur, repudiandae doloremque 
+        dolores quis voluptates dolorum ducimus, magni nemo quaerat eius.</p>
+    <p id="copiado-mod"></p>
+    <button id="copiar">Copiar</button>
+</body>
+</html>
+
