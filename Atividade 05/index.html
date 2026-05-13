@@ -28,5 +28,86 @@
     <div id="resultadoPor"></div>
     <button id="botaoCalcular">Calcular</button>
     
+    <h3>Upload de Imagem</h3>
+    <label for="uploadImagem">Carregar a imagem:</label>
+    <input type="file" id="uploadImagem" accept="image/*">
+    <button id="botaoCarregar">Carregar Imagem</button>
+    <div id="resultado"></div>
+
+    <label for="seletorImagens">Escolha uma Imagem:</label>
+    <select name="" id="seletorImagens">
+        <option value="">-- Selecione um sistema operacional --</option>
+        <option value="https://i.ytimg.com/vi/PmvG1MC6H3o/maxresdefault.jpg">Linux</option>
+        <option value="https://sm.ign.com/ign_br/screenshot/default/windows-11_yyj3.jpg">Windows</option>
+        <option value="https://files.tecnoblog.net/wp-content/uploads/2025/04/Capa-TBR-MacOS.png">MacOS</option>
+    </select>
+
+    <div id="resultadoImagem" style="margin-top: 20px;"></div>
+
+    <div>
+        <input type="checkbox" id="facebook" name="redesSociais" value="Facebook">
+        <label for="facebook">Facebook</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="twitter" name="redesSociais" value="Twitter">
+        <label for="twitter">Twitter</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="instagram" name="redesSociais" value="Instagram">
+        <label for="instagram">Instagram</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="linkedin" name="redesSociais" value="LinkedIn">
+        <label for="linkedin">LinkedIn</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="tiktok" name="redesSociais" value="TikTok">
+        <label for="tiktok">TikTok</label>
+    </div>
+
+    <div id="redesSelecionadas"></div>
+    <button type="button" id="enviarBtn">Enviar Seleção</button>
+
+    <h3>Criando Hashtags</h3>
+    <label for="hashtagUser">Insira sua hastag</label>
+    <input type="text" id="hashtagUser">
+    
+    <select name="" id="hashtagCriadas" size="5" multiple>
+        <option value="" id="hashtagPrinc">-- HashTags --</option>
+    </select>
+    <br>
+    <button id="botaoAdicionar">Adicionar HashTag</button>
+    <button id="botaoRemover">Remover HashTag</button>
+
+    <h1>Mover Ativos Financeiros entre Carteiras</h1>
+    <div class="container">
+        <div>
+            <label for="ativosDisponiveis">Ativos Disponíveis:</label>
+            <select id="ativosDisponiveis" size="10" multiple>
+            <option value="AAPL">Apple (AAPL)</option>
+            <option value="GOOGL">Google (GOOGL)</option>
+            <option value="AMZN">Amazon (AMZN)</option>
+            <option value="MSFT">Microsoft (MSFT)</option>
+            <option value="TSLA">Tesla (TSLA)</option>
+            <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+            <option value="FB">Meta (FB)</option>
+            <option value="V">Visa (V)</option>
+            <option value="JNJ">Johnson & Johnson (JNJ)</option>
+            <option value="WMT">Walmart (WMT)</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button id="moverParaEsquerdaBtn">&lt;</button>
+            <button id="moverParaDireitaBtn">&gt;</button>
+        </div>
+        <div>
+            <label for="carteiraInvestimentos">Carteira de Investimentos:</label>
+            <select id="carteiraInvestimentos" size="10" multiple></select>
+        </div>
+    </div>
 </body>
 </html>

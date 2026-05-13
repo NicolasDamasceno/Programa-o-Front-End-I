@@ -15,3 +15,25 @@
     left: 50%; /* Center the snackbar */
     bottom: 30px;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select {
+    width: 200px;
+}
+
+#hashtagPrinc{
+    text-align: center;
+}
